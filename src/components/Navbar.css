@@ -1,8 +1,6 @@
 .navbar {
     background-image: url("../../public/navbarBackground.png");
     background-size: cover;
-
-    /* Workaround for some mobile browsers */
     height: 81px;
 }
 .nav-item {
