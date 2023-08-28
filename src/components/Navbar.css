@@ -1,12 +1,8 @@
 .navbar {
     background-image: url("../../public/navbarBackground.png");
     background-size: cover;
-    height: 81px;
 }
 
-.logo {
-    margin-left: 56px;
-}
 .nav-link.header-title {
     color: white;
     font-size: 20px;
@@ -19,7 +15,6 @@
 
 .badge-bg {
     background-color: #2A067E;
-    left: 50px;
     top: 4px;
 }
 
@@ -65,4 +60,10 @@
     top: -38px;
     right: -155px;
     width: 17px;
+}
+
+@media (min-width: 576px) {
+    .logo {
+        margin-left: 56px;
+    }
 }
