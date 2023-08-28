@@ -1,0 +1,36 @@
+.cart-item-img {
+    border-radius: 5px;
+}
+
+.cart-item-title {
+    font-weight: 600;
+}
+
+.cart-item-price {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cart-item-description {
+    font-weight: 500;
+}
+
+.cart-item-remove {
+    font-weight: 500;
+    color: #CF1C1C;
+}
+
+.cart-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.cart {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+@media (min-width: 1200px) {
+    .row.cart {
+        margin: 0 150px;
+    }
+}
