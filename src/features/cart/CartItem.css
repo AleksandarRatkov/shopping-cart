@@ -1,0 +1,24 @@
+.cart-item-img {
+    border-radius: 5px;
+    width: 110px;
+    height: 67px;
+}
+
+.cart-item-title {
+    font-weight: 600;
+}
+
+.cart-item-price {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cart-item-description {
+    font-weight: 500;
+}
+
+.cart-item-remove {
+    font-weight: 500;
+    color: #CF1C1C;
+    cursor: pointer;
+}
