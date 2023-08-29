@@ -1,6 +1,8 @@
-.navbar {
+.navbar.products {
     background-image: url("../../public/navbarBackground.png");
     background-size: cover;
+    min-height: 84px;
+    padding: 0px;
 }
 
 .nav-link.header-title {
@@ -8,6 +10,7 @@
     font-size: 20px;
     font-weight: 500;
 }
+
 .nav-link.header-title:hover {
     color: white;
     cursor: pointer;
@@ -16,5 +19,39 @@
 @media (min-width: 576px) {
     .logo {
         margin-left: 56px;
+    }
+}
+
+.shop-link {
+    position: relative;
+}
+
+.shop-link::before {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: -33px;
+    width: 66px;
+    height: 3px;
+    background-color: #81C4EC;
+}
+
+.shop-link::after {
+    content: '';
+    position: absolute;
+    top: 62px;
+    left: -33px;
+    width: 66px;
+    height: 3px;
+    background-color: #81C4EC;
+}
+
+@media (max-width: 900px) {
+    .shop-link::before {
+        top: 8px;
+    }
+    
+    .shop-link::after {
+        top: 35px;
     }
 }
