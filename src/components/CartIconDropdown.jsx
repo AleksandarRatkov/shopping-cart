@@ -15,10 +15,10 @@ const CartIconDropdown = () => {
     const navigate = useNavigate()
     const goToCheckout = () => {
         navigate('/cart');
+        dispatch(setIsCartDropdownShown(false))
     }
 
     useEffect(() => {
-        // Get the dropdown element after it's mounted in the DOM
         const myDropdown = document.getElementById('navigation-dropdowm');
         if (myDropdown) {
             // Add event listener for Bootstrap dropdown show event
@@ -27,7 +27,6 @@ const CartIconDropdown = () => {
             
         }
 
-        // Clean up the event listener when the component unmounts
         return () => {
             if (myDropdown) {
                 myDropdown.removeEventListener('show.bs.dropdown', handleDropdownShow);
