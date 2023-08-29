@@ -4,6 +4,7 @@
     height: 372px;
     margin: auto;
     margin-bottom: 20px;
+    border: none;
 }
 
 .product-title {
@@ -34,4 +35,8 @@
 .btn.btn-add-cart:hover, .btn:first-child:active.btn-add-cart {
     background-color: #B52F8F;
     color: white;
+}
+
+.blured {
+    opacity: 0.5;
 }

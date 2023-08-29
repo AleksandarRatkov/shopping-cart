@@ -11,6 +11,7 @@ export const STATUSES = Object.freeze({
 const initialState = {
     products: [],
     filter: '',
+    isCartDropdownShown: false,
     status: STATUSES.IDLE,
     error: null,
 }
@@ -26,6 +27,9 @@ const productsSlice = createSlice({
     reducers: {
         setFilter: (state, action) => {
             state.filter = action.payload;
+        },
+        setIsCartDropdownShown: (state, action) => {
+            state.isCartDropdownShown = action.payload;
         }
     },
     extraReducers(builder) {
@@ -43,9 +47,10 @@ const productsSlice = createSlice({
             })
     }
 })
-export const { setFilter } = productsSlice.actions
+export const { setFilter, setIsCartDropdownShown } = productsSlice.actions
 export const selectAllProducts = (state) => state.products.products
 export const selectFilter = (state) => state.products.filter
+export const selectIsCartDropdownShown = (state) => state.products.isCartDropdownShown
 
 export const selectFilteredProducts = createSelector(
     [selectAllProducts, selectFilter],

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ProductsPage.css"
 import { useSelector, useDispatch } from 'react-redux'
-import { STATUSES, fetchProducts, selectFilteredProducts, setFilter } from "./productsSlice";
+import { STATUSES, fetchProducts, selectFilteredProducts, selectIsCartDropdownShown, setFilter } from "./productsSlice";
 import ProductItem from "./ProductItem";
 import Spinner from "../../components/Spinner";
 import ErrorMessage from "../../components/ErrorMessage";
@@ -12,6 +12,7 @@ const ProductsPage = () => {
   const productStatus = useSelector((state) => state.products.status)
   const error = useSelector((state) => state.products.error)
   const products = useSelector(selectFilteredProducts)
+  const isCartDropdownShown = useSelector(selectIsCartDropdownShown)
   const [searchText, setSearchText] = useState('')
 
   useEffect(() => {
@@ -40,7 +41,7 @@ const ProductsPage = () => {
 
   return (
     <div className="container mt-5">
-      <div className="row big">
+      <div className={`row big ${isCartDropdownShown && 'blured'}`}>
         <div className="cols-12">
           <div className="input-group mb-5">
             <input

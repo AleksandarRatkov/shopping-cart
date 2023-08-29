@@ -12,7 +12,7 @@ const ProductItem = ({ item }) => {
 
     return (
         <div className="cols-12 col-md-6 col-lg-4">
-            <div className="card product-card">
+            <div className="card product-card shadow-sm">
                 <img src={item.image} className="card-img-top product-image" alt={item.id} />
                 <div className="card-body">
                     <div className="row">
