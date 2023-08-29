@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./ProductsPage.css"
 import { useSelector, useDispatch } from 'react-redux'
 import { STATUSES, fetchProducts, selectAllProducts } from "./productsSlice";
-import Product from "./Product";
+import ProductItem from "./ProductItem";
 
 const ProductsPage = () => {
   const dispatch = useDispatch()
@@ -20,7 +20,7 @@ const ProductsPage = () => {
     <div className="container mt-5">
       <div className="row big">
         {products.map((item) => (
-          <Product key={item.id} item={item} />
+          <ProductItem key={item.id} item={item} />
         ))}
       </div>
     </div>

@@ -13,55 +13,6 @@
     cursor: pointer;
 }
 
-.badge-bg {
-    background-color: #2A067E;
-    top: 4px;
-}
-
-.menu-item-img {
-    border-radius: 5px;
-    margin: 20px;
-}
-.dropdown-menu.cart {
-    border-radius: 10px;
-    min-width: 246px;
-}
-
-.btn.btn-checkout {
-    width: 100%;
-    background-color: #2A067E;
-    color: white;
-    border-radius: 4px;
-    margin: 0 23px 15px 23px;
-    font-size: 16px;
-    font-weight: bold;
-}
-.btn.btn-checkout:hover {
-    background-color: #2A067E;
-    color: white;
-}
-
-.mr-50 {
-    margin-right: 50px;
-}
-
-.borderless {
-    border: none !important;
-}
-
-.shop-badge{
-    padding: 0 3px;
-    background-color: #2A067E;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 50%;
-    position: relative;
-    top: -38px;
-    right: -155px;
-    width: 17px;
-}
-
 @media (min-width: 576px) {
     .logo {
         margin-left: 56px;

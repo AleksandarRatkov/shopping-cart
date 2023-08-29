@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from 'react-redux'
 import { selectAllCartItemsCount, selectAllCartItems } from "../features/cart/cartSlice";
 import { useNavigate } from "react-router-dom";
+import "./CartIconDropdown.css"
 
 const CartIconDropdown = () => {
 

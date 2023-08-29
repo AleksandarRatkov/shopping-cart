@@ -1,9 +1,9 @@
 import React from "react";
 import { addToCart } from "../cart/cartSlice";
 import { useDispatch } from 'react-redux'
+import "./ProductItem.css"
 
-
-const Product = ({ item }) => {
+const ProductItem = ({ item }) => {
 
     const dispatch = useDispatch()
     const addItemToCart = () => {
@@ -33,4 +33,4 @@ const Product = ({ item }) => {
     )
 }
 
-export default Product
+export default ProductItem
