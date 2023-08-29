@@ -19,7 +19,7 @@ const CartItem = ({ item }) => {
     }
 
     return (
-        <div className={`row cart my-4 ${isRemoving ? 'animate__animated animate__zoomOut' : ''}`}>
+        <div className={`row cart my-4 ${isRemoving ? 'animate__animated animate__zoomOut animate__slow' : ''}`}>
             <div className="col-3 col-md-2 d-flex justify-content-start px-0">
                 <img src={item.image} className="cart-item-img" alt={item.id} />
             </div>
