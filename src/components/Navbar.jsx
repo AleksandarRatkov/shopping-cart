@@ -1,11 +1,9 @@
 import React from "react";
 import "./Navbar.css"
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CartIconDropdown from "./CartIconDropdown";
 
 const Navbar = () => {
-
-    const location = useLocation();
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,10 +20,7 @@ const Navbar = () => {
                         <li className="nav-item mr-50">
                             <Link className="text-decoration-none" to="/"><span className="nav-link header-title">Shop</span></Link>
                         </li>
-
-                        {location.pathname !== "/cart" && (
-                            <CartIconDropdown />
-                        )}
+                        <CartIconDropdown />
                     </ul>
                 </div>
             </div>

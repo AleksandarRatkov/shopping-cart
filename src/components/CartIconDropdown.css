@@ -49,6 +49,10 @@
     .dropdown-menu.cart::before {
         right: 110px;
     }
+
+    .hidden {
+        display: none;
+    }
 }
 @media (max-width: 767px) {
     .dropdown-menu.cart.dropdown-menu-end {
@@ -75,4 +79,8 @@
         top: -8px;
         right: 4%;
     }
+}
+
+.hidden {
+    visibility: hidden;
 }

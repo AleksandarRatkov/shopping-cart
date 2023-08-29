@@ -22,3 +22,9 @@
     color: #CF1C1C;
     cursor: pointer;
 }
+
+@media (max-width: 767px) {
+    .cart-item-img {
+        margin: auto;
+    }
+}

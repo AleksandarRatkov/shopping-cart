@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import ProductsPage from './features/products/ProductsPage';
 import CartPage from './features/cart/CartPage';
+import "animate.css";
 
 const App = () => {
   return (
