@@ -1,6 +1,7 @@
 # Shopping Cart App build using React and Redux Toolkit
 
 Simple shopping cart project built using ReactJS and Redux Toolkit for interview purposes. I used Bootstrap 5 to style the webpage. 
+You can try demo app [here](https://shopping-cart-5356e.web.app/).
 
 ## Setup
 ### Installing dependencies
